@@ -80,7 +80,7 @@ header h1 {
 }
 
 #info div h3 {
-    font:bold 1.7em var(--tituloS);
+    font: bold 1.7em var(--tituloS);
 
 }
 
@@ -213,7 +213,7 @@ header h1 {
 }
 
 #contact {
-    padding: 50px;
+    padding: 50px 10px;
 }
 
 #contact h2 {
@@ -261,7 +261,7 @@ footer a:hover {
     #redes {
         flex-direction: column;
     }
-    #redes h2 {
+    #redes h3 {
         margin: 0 0 50px 0;
     }
 }
@@ -273,5 +273,43 @@ footer a:hover {
         align-items: center;
         min-width: 0;
         margin: auto;
+    }
+}
+
+@media (max-width: 400px){
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    #info {
+        text-align: justify;
+        padding: 50px 0;
+    }
+
+    #info div {
+        margin: auto;
+    }
+
+    #info div h3 {
+        font-size: 1.5em;
+        width: 200px;
+        text-align: center;
+    }
+
+    #info #oqfc p, #linguag p, #estudo p {
+        margin: 10px 0;
+    }
+
+    #info #estudo p {
+        margin: 10px 0 0 0;
+    }
+
+    #info p {
+        width: 200px;
+        font-size: 1em;
+    }
+
+    #redes h2 {
+        padding: 0 0 30px 0;
     }
 }
