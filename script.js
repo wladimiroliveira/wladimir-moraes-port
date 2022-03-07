@@ -11,7 +11,6 @@ function load(){
     var pro1 = document.getElementById('pro1')    
     var pro2 = document.getElementById('pro2')    
     var pro3 = document.getElementById('pro3')
-    var mostra = document.getElementById('mostra')    
     bt1.addEventListener('click', diminu)
     bt2.addEventListener('click', aumentar)
 
@@ -33,6 +32,8 @@ function load(){
 
                     title.innerHTML='Cordel Moderno'
                     descricao.innerHTML='Segundo projeto do curso de <a target="_blank" href="https://www.youtube.com/watch?v=Ejkb_YpuHWs">HTML5 e CSS3</a>, feito por Gustavo Guanabara do canal Curso em Vídeo. Cordel escrito por Milton Duarte.'
+                } else if(num > 2){
+                    num -= 1
                 }
         }
     }
@@ -55,6 +56,8 @@ function load(){
 
                 title.innerHTML='Landing Page Ballebot'
                 descricao.innerHTML='Landing Page feita com a video aula do canal <a target="_blank" href="https://www.youtube.com/watch?v=llF6vD-RljE">Raffaela Ballerini</a>. Modelo de página para anunciar qualquer produto.'
+            } else if(num < 0){
+                num += 1
             }
     }
 }

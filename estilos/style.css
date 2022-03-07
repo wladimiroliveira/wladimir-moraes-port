@@ -520,4 +520,8 @@ footer {
     #fonte {
         margin: 20px 0;
     }
+
+    #credit {
+        margin: 10px;
+    }
 }
