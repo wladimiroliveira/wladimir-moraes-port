@@ -130,12 +130,25 @@ header {
 /* Configuração do main/projetos */
 
 #projetos {
+    background-color: var(--cor2);
+    height: fit-content;
+    padding-bottom: 40px;
+}
+
+#projetos .box {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 97vh;
     background-color: var(--cor2);
+}
+
+#projetos h2 {
+    text-align: center;
+    font: 600 30px var(--roboto);
+    background-color: var(--cor2);
+    color: var(--cor4);
+    padding: 40px;
 }
 
 #post {
@@ -146,13 +159,14 @@ header {
 }
 
 #projetos #desc {
-    margin: 0 10em 0 10em;
+    margin: 0 10em 150px 10em;
     width: 300px;
 }
 
 #projetos #desc #titulo {
     font: 600 30px var(--roboto);
     color: var(--cor5);
+    padding: 0;
 }
 
 #projetos #desc #descri {
@@ -233,11 +247,11 @@ header {
 /* Configuração do main/contato */
 
 #contato {
-    height: 100vh;
+    height: fit-content;
+    padding-bottom: 50px;
 }
 
 #contato > .box{
-    height: 75vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -249,11 +263,11 @@ header {
     font: 600 30px var(--roboto);
     color: var(--cor1);
     text-align: center;
-    margin: 30px;
+    margin: 30px 0 40px 0;
 }
 
 #contato #mail img {
-    width: 400px;
+    width: 350px;
     margin-right: 15em;
 }
 
@@ -275,9 +289,11 @@ header {
 }
 
 #contato #contact-box #mensag {
-    height: 100px;
+    min-height: 100px;
+    max-height: 250px;
     border: 2px solid var(--cor1);
-    width: 300px;
+    min-width: 300px;
+    max-width: 80vw;
     padding: 5px;
     border-radius: 5px;
     font: 400 15px var(--roboto);
@@ -413,12 +429,29 @@ footer {
 /* Responsividade do main/projeto */
 
     #projetos {
+        height: fit-content;
+        padding:  0 0 40px 0;
+    }
+
+    #projetos .box{
         flex-direction: column;
         text-align: center;
+        justify-content: flex-start;
+        height: fit-content;
+        
+    }
+
+    #projetos .box #desc {
+        margin: 0;
+    }
+
+    #projetos h2 {
+        margin: 0;
     }
 
     #projetos #desc #titulo {
         font-size: 25px;
+        padding: 5px;
     }
 
     #projetos #desc #descri {
@@ -430,7 +463,7 @@ footer {
     }
 
     #projetos #desc #descri {
-        margin: 10px; 
+        margin: 5px 0 10px 0; 
     }
 
     .container {
@@ -507,7 +540,7 @@ footer {
 
     /* Projetos */
 
-        #projetos #proj {
+        #projetos .box #proj {
             flex-direction: column;
         }
 /* Footer */
