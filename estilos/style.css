@@ -27,6 +27,7 @@ nav {
     position: fixed;
     width: 100%;
     z-index: 1;
+    padding: 5px;
 }
 
 #logo{
